@@ -41,7 +41,6 @@
 
     function gameOver() {
       isGameOver = true;
-      // You can handle game over logic here
       console.log('Game Over! Your score was:', score);
     }
 
@@ -52,7 +51,7 @@
         context.fillRect(segment.x, segment.y, gridSize - 1, gridSize - 1);
       });
 
-      // Render apple
+  
       context.fillStyle = 'red';
       context.fillRect(apple.x, apple.y, gridSize - 1, gridSize - 1);
     }
@@ -93,5 +92,5 @@
       render();
     }
 
-    setInterval(gameLoop, 100); // Adjust timing
+    setInterval(gameLoop, 100); 
 
